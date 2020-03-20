@@ -51,4 +51,14 @@ header div a:hover{
     font-size: 18px;
     line-height: 22px;
 }
+#wrapper-about p a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#wrapper-about p a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    color: #c7c7c7;
+    transition: color 250ms;
+}
 
