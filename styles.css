@@ -1,5 +1,12 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap";
 
+:root {
+    --color-green: rgba(0, 252, 134, 0.493);
+    --color-white: rgb(255, 255, 255);
+    --color-hover:  #c7c7c7;
+    --color-background: rgb(53, 36, 58);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +14,8 @@
 }
 
 body {
-    background-color: rgb(53, 36, 58);
-    color: rgb(255, 255, 255);
+    background-color: var(--color-background);
+    color: var(--color-white);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -18,20 +25,19 @@ header {
     background: rgba(0, 0, 0, 0.171);
 }
 
-header div {
+.links {
     text-align: center;
 }
 
-header div a {
-    color: rgb(255, 255, 255);
+.links a {
+    color: var(--color-white);
     font-size: 18px;
     line-height: 28px;
     margin: 0px 15px;
     text-decoration: none;           
 }
-
-header div a:hover{
-    color: #c7c7c7;
+.links a:hover{
+    color: var(--color-hover);
     transition: color 250ms;
 }
 
@@ -41,10 +47,10 @@ header div a:hover{
 }
 
 #wrapper img {
-    width: 250px;
     border-radius: 50%;
-    border: 5px solid rgb(37, 255, 153);
+    border: 5px solid var(--color-green);
     margin-bottom: 4px;
+    height: 250px;
 }
 
 #wrapper h1 {
@@ -55,11 +61,11 @@ header div a:hover{
 
 #wrapper h1 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--color-white);
 }
 
 #wrapper h1 a:hover {
-    color:rgb(167, 167, 167);
+    color: var(--color-hover);
     transition: color 250ms;
 }
 
@@ -74,5 +80,9 @@ header div a:hover{
     max-width: 500px;
     margin: 16px auto;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 22px; 
+}
+
+#links-footer a{
+    border-bottom: 1px solid var(--color-green);
 }

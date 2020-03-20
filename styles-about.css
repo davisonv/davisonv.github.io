@@ -1,5 +1,12 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap";
 
+:root {
+    --color-green: rgb(37, 255, 153);
+    --color-white: rgb(255, 255, 255);
+    --color-hover:  #c7c7c7;
+    --color-background: rgb(53, 36, 58);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +14,8 @@
 }
 
 body {
-    background-color: rgb(53, 36, 58);
-    color: rgb(255, 255, 255);
+    background-color: var(--color-background);
+    color: var(--color-white);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -23,7 +30,7 @@ header div {
 }
 
 header div a {
-    color: rgb(255, 255, 255);
+    color: var(--color-white);
     font-size: 18px;
     line-height: 28px;
     margin: 0px 15px;
@@ -31,7 +38,7 @@ header div a {
 }
 
 header div a:hover{
-    color: #c7c7c7;
+    color: var(--color-hover);
     transition: color 250ms;
 }
 #wrapper-about {
@@ -53,12 +60,12 @@ header div a:hover{
 }
 #wrapper-about p a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--color-white);
 }
 #wrapper-about p a:hover {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    color: #c7c7c7;
+    color: var(--color-white);
+    color: var(--color-hover);
     transition: color 250ms;
 }
 
