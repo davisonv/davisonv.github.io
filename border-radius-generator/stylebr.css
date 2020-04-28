@@ -14,18 +14,32 @@
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(71, 57, 77);
+    background-color: rgb(53, 36, 58);
+    color: rgb(255, 255, 255);
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-header h1 {
+header {
+    padding: 30px 30px 30px 30px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.171);
+}
+
+.links {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.363);
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    margin-bottom: 35px;
-    border-bottom: solid 1px;
+}
+
+.links a {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0px 15px;
+    text-decoration: none;           
+}
+
+.links a:hover{
+    color:  #c7c7c7;
+    transition: color 250ms;
 }
 
 .box {
@@ -48,7 +62,7 @@ header h1 {
 }
 
 #copy-btn {
-    background-color: rgb(71, 57, 77);
+    background-color:rgb(53, 36, 58);
     padding-left: 44%;
 }
 
