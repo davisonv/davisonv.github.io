@@ -43,10 +43,13 @@ header {
 }
 
 .box {
-    padding: 100px;
-    width: 28%;
-    height: 50px;
-    margin: 30 auto;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    width: 30%;
+    height: 15%;
+    margin: 0 auto;
     border: 1px solid;
     color: white;
     border-radius: var(--border-radius1) var(--border-radius2) var(--border-radius3) var(--border-radius4);
