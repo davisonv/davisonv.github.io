@@ -46,7 +46,7 @@ header {
     padding: 100px;
     width: 28%;
     height: 50px;
-    margin: 0 auto;
+    margin: 30 auto;
     border: 1px solid;
     color: white;
     border-radius: var(--border-radius1) var(--border-radius2) var(--border-radius3) var(--border-radius4);
