@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
 
 :root {
-   --border-radius: 1px;
+   --border-radius1: 1px;
    --border-radius2: 1px;
    --border-radius3: 1px;
    --border-radius4: 1px;
@@ -30,36 +30,66 @@ header h1 {
 
 .box {
     padding: 100px;
-    width: 300px;
+    width: 28%;
     height: 50px;
     margin: 0 auto;
-    border: 2px solid;
+    border: 1px solid;
     color: white;
-    border-radius: var(--border-radius) var(--border-radius2) var(--border-radius3) var(--border-radius4);
+    border-radius: var(--border-radius1) var(--border-radius2) var(--border-radius3) var(--border-radius4);
 }
 
-.box #box-text {
-    text-align: center;
-    opacity: 30%;
+#box-text {
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+    background-color: white;
+    color: rgb(94, 94, 94);
+}
+
+#copy-btn {
+    background-color: rgb(71, 57, 77);
+    padding-left: 40%;
+}
+
+.material-icons {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 7px;
+}
+
+.material-icons:hover {
+    color:  rgb(184, 41, 212);
+    transition: color 700ms;
 }
 
 #inputs {
     display: grid;
     grid-template-columns: 4fr;
-    margin: 18 590;
-    width: 28px;
+    margin: 18 auto;
+    width: auto;
     border-radius: 5%;
 }
 
 #inputs #right {
-    margin-top: 4px;
-    margin-bottom: 4px;
+  margin: 1 auto;
+    width: 150px;
 }
 
 #inputs #bottom  {
-    margin-bottom: 4px;
+    margin: 1 auto;
+    width: 150px;
 }
 
+#inputs #top  {
+    margin: 1 auto;
+    width: 150px;
+}
+
+#inputs #left  {
+    margin: 1 auto;
+    width: 150px;
+}
 
 #inputs #button {
     margin: 4 auto;
